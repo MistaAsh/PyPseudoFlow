@@ -86,4 +86,4 @@ The Decoder network uses an Attention-based mechanism to combine the encoder out
 
 1. Learning to Generate Pseudo-code from Source Code using Statistical Machine Translation, [Link](http://www.phontron.com/paper/oda15ase.pdf)
 2. Pseudogen, [Link](https://github.com/delihiros/pseudogen)
-3. Python to Flowchart, [Link](https://github.com/cdfmlr/pyflowchart)
+3. Python code to Flowchart, [Link](https://github.com/cdfmlr/pyflowchart)
