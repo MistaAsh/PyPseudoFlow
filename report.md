@@ -35,6 +35,8 @@ Since the 1950s, training computers to translate two natural languages have been
 
 ![Encoder Decoder MT Model](/virtual-expo/assets/img/compsoc/mt-encoder-decoder.png)
 
+Machine translation evolved significantly from its inception in 1951, from simple rule-based heuristics to statistical methods and finally using advanced Machine Learning techniques like Deep Neural Networks. The goal of machine translation has always been to effectively translate a sentence from a source language to a sentence in a target language while maintaining linguistic, semantic and syntactic similarities through the translation.
+
 Machine Translation can broadly be classified into 3 types:
 
 - Rule-Based Machine Translation, where handwritten rules are explicitly programmed to translate phrases from one language to another
