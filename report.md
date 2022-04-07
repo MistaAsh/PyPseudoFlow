@@ -55,7 +55,7 @@ The statistical approach contrasts with the rule-based approaches to machine tra
 More recently, deep neural network models have achieved state-of-the-art results in a field that is aptly named Neural Machine Translation. Most Neural Machine Translation systems follow the encoder-decoder architecture where the source sentence is encoded into a constant size vector using a Recurrent Neural Network as shown below and fed into another decoder network along with words from the input sentence. The constant size vector provides the required contextual information to 
 
 <p align="center">
-![3024419780-36a33904a2a631c7_articlex](https://user-images.githubusercontent.com/76606666/162216719-498084cf-d0cb-4494-ab35-1778dd22160e.png)
+  <img src="https://d2l.ai/_images/seq2seq.svg">
 </p>
 
 The above architecture, however, fails when the length of the sentence increases beyond a certain limit. This happens because we are trying to cram variable amount of contextual information into a fixed sized vector. In order to overcome this, we use Attention Mechanism.  
