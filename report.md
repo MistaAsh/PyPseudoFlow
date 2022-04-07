@@ -37,7 +37,16 @@ Since the 1950s, training computers to translate two natural languages have been
 
 ### Neural Machine Translation
 
+<br>
+
 ## Translating Python Code to Pseudocode
+Due to its robust and flexible nature, with the extensive use of special characters with significant meaning, translating Python code to Pseudocode is much more complex than a simple language-to-language translation.
+
+Here, to take care of the syntax and use of characters such as `[, {, /, // etc.`, we have used a rule-based architecture to replace these symbols with their corresponding English equivalents. This allows us to use an Attention Machine Translation model to translate the code to pseudocode.
+
+We then use an Encoder network to output some value for every word from the input sentence. For every input word, the encoder outputs a vector and a hidden state and uses the hidden state for the next input word.
+
+The decoder network uses an Attention-based mechanism to combine the encoder output with the decoder input. The decoder network uses the encoder output to predict the next word in the input sentence and generate the output pseudocode for a given instance of Python code.
 
 ## Comparing NMT Model to Existing Implementations
 
