@@ -10,14 +10,14 @@ gmeet: "https://meet.google.com/bjm-kzep-hkb"
 
 ### Mentors
 
-- Mentor1
-- Mentor2
+- Nishant Nayak
+- Sravani Katasani
+- Mudit Singhal
 
 ### Members
 
-- Member1
-- Member2
-- Member3
+- Ashish Bharath
+- Mohammed Ayman
 
 ## Aim
 
