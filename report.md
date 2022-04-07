@@ -48,17 +48,19 @@ The latter 2 methods are explained below.
 ### Statistical Machine Translation
 
 SMT is a machine translation method where the translations are made based on previously seen bilingual corpora. The model makes a prediction on what the next word will be based on previously seen sequences of words.
-The statistical approach contrasts with the rule-based approaches to machine translation as well as with example-based machine translation. The idea for statistical machine translation comes from information theory where a probabilistic distribution <strong>p(T|S)</strong> that a string T in a target language is a translation of string S in the source language is modeled by applying various statistical and probabilistic techniques on a huge amount of textual corpora. Bayes theorem is one such modelling approach. Even though an SMT model would perform better than a Rule based model, it has its own downsides and is nowhere near to match accuracies with Natural Human Translation. An SMT model also performs poorly on a language pair with differing word orders and linguistic structure. 
+The statistical approach contrasts with the rule-based approaches to machine translation as well as with example-based machine translation. The idea for statistical machine translation comes from information theory where a probabilistic distribution p(T|S) that a string T in a target language is a translation of string S in the source language is modeled by applying various statistical and probabilistic techniques on a huge amount of textual corpora. Bayes theorem is one such modelling approach. Even though an SMT model would perform better than a Rule based model, it has its own downsides and is nowhere near to match accuracies with Natural Human Translation. An SMT model also performs poorly on a language pair with differing word orders and linguistic structure. 
 
 ### Neural Machine Translation
 
 More recently, deep neural network models have achieved state-of-the-art results in a field that is aptly named Neural Machine Translation. Most Neural Machine Translation systems follow the encoder-decoder architecture where the source sentence is encoded into a constant size vector using a Recurrent Neural Network as shown below and fed into another decoder network along with words from the input sentence. The constant size vector provides the required contextual information to 
 
+<p align="center">
 ![3024419780-36a33904a2a631c7_articlex](https://user-images.githubusercontent.com/76606666/162216719-498084cf-d0cb-4494-ab35-1778dd22160e.png)
+</p>
 
 The above architecture, however, fails when the length of the sentence increases beyond a certain limit. This happens because we are trying to cram variable amount of contextual information into a fixed sized vector. In order to overcome this, we use Attention Mechanism.  
 
-Attention allows the decoder network to “focus” on a different part of the encoder’s outputs for every step of the decoder’s own outputs. First we calculate a set of _attention weights_. These will be multiplied by the encoder output vectors to create a weighted combination. The result should contain information about that specific part of the input sequence, and thus help the decoder choose the right output words. Calculating the attention weights is done with another feed-forward layer `attn`, using the decoder’s input and hidden state as inputs. 
+Attention allows the decoder network to “focus” on a different part of the encoder’s outputs for every step of the decoder’s own outputs. First we calculate a set of _attention weights_. These will be multiplied by the encoder output vectors to create a weighted combination. The result should contain information about that specific part of the input sequence, and thus help the decoder choose the right output words. Calculating the attention weights is done with another feed-forward layer, using the decoder’s input and hidden state as inputs. 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/76606666/162220562-9aa1db1f-6c9a-4c59-9300-b36c1974c2a0.png">
