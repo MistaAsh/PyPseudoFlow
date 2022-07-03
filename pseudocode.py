@@ -1,8 +1,6 @@
-
 import time
 from logging import debug, info, warning, basicConfig, INFO, DEBUG, WARNING
 basicConfig(level=WARNING)
-
 
 
 def getTextFile(filep):
